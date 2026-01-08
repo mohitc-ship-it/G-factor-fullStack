@@ -1,0 +1,141 @@
+[
+    {
+        "file_name": "d6d2832d-3967-4a64-91be-a04e9d29b6b5_Logsheet.xlsx",
+        "file_type": "xlsx",
+        "file_path": "uploaded_files/20251107_022633_fc59b92e-bf28-4d35-bf58-3d07702c80a7/d6d2832d-3967-4a64-91be-a04e9d29b6b5_Logsheet.xlsx",
+        "extracted_content_folder": "rag_outputs/d6d2832d-3967-4a64-91be-a04e9d29b6b5_Logsheet_20251107_022633",
+        "uploaded_on": "2025-11-07T02:27:14.394942",
+        "file_summary": "The document outlines the operational parameters and chemical compositions for pickle and nickel sulfamate tanks, including acceptable ranges for various chemical concentrations and conditions necessary for optimal processing. It also includes notes on adjustments made to maintain these parameters.",
+        "anomalies_detected": {
+            "anomalies_detected": [
+                {
+                    "anomaly_desc": "Surface tension is recorded at 48.8, which exceeds the maximum acceptable limit of 45.",
+                    "anomaly_rule_detail": "Surface tension must be between 40- 45.",
+                    "anomaly_rule_source_file": "logsheet",
+                    "suggested_solution": "Add Sodium lauryl sulfate (SLS) to reduce surface tension."
+                }
+            ]
+        },
+        "rules_detected": [
+            {
+                "rule_name": "Acceptable Range for Nickel Sulfamate Tetrahydrate and Boric Acid",
+                "rule_definition": "Nickel Sulfamate Tetrahydrate must be between 560 and 580 g/L and Boric acid must be between 16 and 20 g/L.",
+                "applies_on": [
+                    "Nickel Sulfamate tank"
+                ],
+                "parameters": {
+                    "type": "range",
+                    "fields": [
+                        "Nickel Sulfamate Tetrahydrate",
+                        "Boric acid"
+                    ]
+                },
+                "severity": "mandatory",
+                "action_on_violation": "Adjust concentrations to meet specifications.",
+                "extracted_from": null
+            },
+            {
+                "rule_name": "Nickel Chloride Hexahydrate Concentration",
+                "rule_definition": "Nickel Chloride Hexahydrate must be between 12 and 17 g/L.",
+                "applies_on": [
+                    "Nickel Sulfamate tank"
+                ],
+                "parameters": {
+                    "type": "range",
+                    "fields": [
+                        "Nickel Chloride Hexahydrate"
+                    ]
+                },
+                "severity": "mandatory",
+                "action_on_violation": "Adjust concentration to meet specifications.",
+                "extracted_from": null
+            },
+            {
+                "rule_name": "Surface Tension for Pickle",
+                "rule_definition": "Surface tension must be less than 45.",
+                "applies_on": [
+                    "Pickle tank"
+                ],
+                "parameters": {
+                    "type": "max",
+                    "fields": [
+                        "Surface Tension"
+                    ]
+                },
+                "severity": "mandatory",
+                "action_on_violation": "Add Sodium lauryl sulfate (SLS) to reduce surface tension.",
+                "extracted_from": null
+            },
+            {
+                "rule_name": "HCl Concentration in Pickle",
+                "rule_definition": "HCl concentration should be around 30%.",
+                "applies_on": [
+                    "Pickle tank"
+                ],
+                "parameters": {
+                    "type": "target",
+                    "fields": [
+                        "%HCl in pickle"
+                    ]
+                },
+                "severity": "mandatory",
+                "action_on_violation": "Add HCl to pickle to achieve target concentration.",
+                "extracted_from": null
+            }
+        ]
+    },
+    {
+        "file_name": "65da9d26-9089-427f-b22e-dca7cd819167_AA Logsheet.xlsx",
+        "file_type": "xlsx",
+        "file_path": "uploaded_files/20251111_201543_a9f17f54-4b42-4c11-bf7a-2ea679a46438/65da9d26-9089-427f-b22e-dca7cd819167_AA Logsheet.xlsx",
+        "extracted_content_folder": "rag_outputs/65da9d26-9089-427f-b22e-dca7cd819167_AA Logsheet_20251111_202345",
+        "uploaded_on": "2025-11-11T20:25:47.468891",
+        "file_summary": "The document contains a table of measured values for zinc (Zn), iron (Fe), copper (Cu), and chromium (Cr) over several dates, likely related to a chemical process or operational monitoring.",
+        "anomalies_detected": {
+            "anomalies_detected": []
+        },
+        "rules_detected": []
+    },
+    {
+        "file_name": "93c4c93a-5521-43e0-b940-f175b6ec25d5_Repair_Service Report.pdf",
+        "file_type": "pdf",
+        "file_path": "uploaded_files/20251111_201543_a9f17f54-4b42-4c11-bf7a-2ea679a46438/93c4c93a-5521-43e0-b940-f175b6ec25d5_Repair_Service Report.pdf",
+        "extracted_content_folder": "rag_outputs/93c4c93a-5521-43e0-b940-f175b6ec25d5_Repair_Service Report_20251111_202549",
+        "uploaded_on": "2025-11-11T20:37:50.876565",
+        "file_summary": "This document is a service report from Agilent Technologies detailing a service request for a repair on an Agilent 240FS AA Spectrometer, including pricing information and service details. It includes customer and service provider information, service items, and a description of the service performed.",
+        "anomalies_detected": {
+            "anomalies_detected": [
+            ]
+        },
+        "rules_detected": [
+        ]
+    },
+    {
+        "file_name": "7c13a0f8-3936-4eaa-a6a5-5450abec84c5_Haviland-Ni Sulfamate 11-12-24.xls",
+        "file_type": "xls",
+        "file_path": "uploaded_files/20251111_201543_a9f17f54-4b42-4c11-bf7a-2ea679a46438/7c13a0f8-3936-4eaa-a6a5-5450abec84c5_Haviland-Ni Sulfamate 11-12-24.xls",
+        "extracted_content_folder": "rag_outputs/7c13a0f8-3936-4eaa-a6a5-5450abec84c5_Haviland-Ni Sulfamate 11-12-24_20251111_203800",
+        "uploaded_on": "2025-11-11T20:44:26.168641",
+        "file_summary": "This document is an analysis report for a Bright Nickel Plating Solution, detailing the chemical composition and providing recommendations for maintaining the solution's quality. It includes measured values for various metals and suggests adjustments to pH and the addition of Boric Acid.",
+        "anomalies_detected": {
+            "anomalies_detected": [
+            ]
+        },
+        "rules_detected": [
+        ]
+    },
+    {
+        "file_name": "916a2fd5-d34c-4d13-ac6e-3499e23940d8_Ni analysis using AA.docx",
+        "file_type": "docx",
+        "file_path": "uploaded_files/20251111_201543_a9f17f54-4b42-4c11-bf7a-2ea679a46438/916a2fd5-d34c-4d13-ac6e-3499e23940d8_Ni analysis using AA.docx",
+        "extracted_content_folder": "rag_outputs/916a2fd5-d34c-4d13-ac6e-3499e23940d8_Ni analysis using AA_20251111_204435",
+        "uploaded_on": "2025-11-11T20:57:24.027447",
+        "file_summary": "This document outlines the standard operating procedure (SOP) for conducting nickel analysis using an atomic absorption (AA) spectrometer, detailing equipment setup, maintenance, and operational guidelines.",
+        "anomalies_detected": {
+            "anomalies_detected": [
+            ]
+        },
+        "rules_detected": [
+        ]
+    }
+]

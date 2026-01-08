@@ -1,0 +1,12 @@
+.env
+*.pdf
+*.xlsx
+*.docx
+.DS_Store
+output_folder
+rag_outputs
+rag_storage
+rag_storage2
+rag_storage3
+uploaded_files
+__pycache__

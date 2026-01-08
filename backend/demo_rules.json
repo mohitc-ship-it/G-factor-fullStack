@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "source": "Aggregated Knowledge Base (All Documents)",
+  "last_updated": "2025-11-04",
+  "rules": [
+    {
+      "rule_id": "R-001",
+      "rule_name": "Parameter Range Enforcement",
+      "rule_definition": "Ensure that specific parameters in datasets or reports remain within defined thresholds.",
+      "applies_on": ["Analytical Reports", "Log Sheets", "Equipment Data", "Sensor Logs"],
+      "parameters": {
+        "parameter_name": "Nickel Concentration",
+        "min_value": 80,
+        "max_value": 90,
+        "unit": "g/L",
+        "type": "range"
+      },
+      "severity": "high",
+      "action_on_violation": "Flag as anomaly, record in anomaly log, trigger planner or troubleshooting agent.",
+      "extracted_from": ["TM-192.docx", "Logsheet.xlsx"],
+      "related_docs": ["Haviland Report", "AA Logsheet"]
+    },
+    {
+      "rule_id": "R-002",
+      "rule_name": "Scheduled Maintenance Interval",
+      "rule_definition": "Components or equipment must follow a predefined service or calibration schedule.",
+      "applies_on": ["Maintenance Reports", "PM Logs"],
+      "parameters": {
+        "interval_days": 14,
+        "type": "schedule"
+      },
+      "severity": "medium",
+      "action_on_violation": "Mark maintenance overdue, alert service agent.",
+      "extracted_from": ["Repair_Service Report.pdf"]
+    },
+    {
+      "rule_id": "R-003",
+      "rule_name": "Searchable Document Requirement",
+      "rule_definition": "All uploaded text or PDF documents must be made AI-searchable after ingestion.",
+      "applies_on": ["Text Files", "PDFs", "Word Docs"],
+      "parameters": {
+        "require_searchable": true,
+        "indexing_method": "vector + metadata graph"
+      },
+      "severity": "low",
+      "action_on_violation": "Trigger re-index pipeline, notify ingestion agent.",
+      "extracted_from": ["System Policy"]
+    },
+    {
+      "rule_id": "R-004",
+      "rule_name": "Cross-reference Validation",
+      "rule_definition": "Data from analytical reports must align with logsheet and titration calculations.",
+      "applies_on": ["Analytical Reports", "Excel Sheets", "Internal Methods"],
+      "parameters": {
+        "type": "cross_check",
+        "linked_fields": ["Ni_Concentration", "pH", "Temp"]
+      },
+      "severity": "high",
+      "action_on_violation": "Notify planner agent to recompute related values and flag mismatch.",
+      "extracted_from": ["Haviland Report", "TM-192.xlsx"]
+    },
+    {
+      "rule_id": "R-005",
+      "rule_name": "Troubleshooting Assistance Rule",
+      "rule_definition": "If an anomaly or failure occurs, cross-reference equipment manuals and manufacturer websites for solutions.",
+      "applies_on": ["Equipment Manuals", "AA Instrument Logs"],
+      "parameters": {
+        "type": "external_lookup",
+        "sources": ["Agilent Website", "Maintenance Docs"]
+      },
+      "severity": "medium",
+      "action_on_violation": "Trigger web search or retrieval from local indexed manuals.",
+      "extracted_from": ["Ni analysis using AA.docx"]
+    },
+    {
+      "rule_id": "R-006",
+      "rule_name": "Out-of-Range Detection Rule",
+      "rule_definition": "Whenever a logged parameter exceeds its defined operational range, generate a structured anomaly report.",
+      "applies_on": ["Log Sheets", "AA Logs", "Sensor Data"],
+      "parameters": {
+        "type": "event_trigger",
+        "fields": ["temperature", "pH", "Ni_concentration"]
+      },
+      "severity": "critical",
+      "action_on_violation": "Store anomaly JSON, initiate corrective workflow, append history to dashboard.",
+      "extracted_from": ["Logsheet.xlsx"]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+[
+    {
+        "rule_name": "HCl Concentration Target",
+        "rule_definition": "Hydrochloric acid concentration must be around 30%.",
+        "applies_on": [
+            "Pickle tank"
+        ],
+        "parameters": {
+            "type": "target",
+            "fields": null
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Review and adjust the concentration.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Nickel Sulfamate Concentration Target",
+        "rule_definition": "Nickel Sulfamate Tetrahydrate concentration must be 580 g/L.",
+        "applies_on": [
+            "Nickel Sulfamate tank"
+        ],
+        "parameters": {
+            "type": "target",
+            "fields": null
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Review and adjust the concentration.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Boric Acid Concentration Target",
+        "rule_definition": "Boric acid concentration must be 60 g/L.",
+        "applies_on": [
+            "Nickel Sulfamate tank"
+        ],
+        "parameters": {
+            "type": "target",
+            "fields": null
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Review and adjust the concentration.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Surface Tension Limit",
+        "rule_definition": "Surface tension must be less than 45.",
+        "applies_on": [
+            "Pickle solution"
+        ],
+        "parameters": {
+            "type": "max",
+            "fields": null
+        },
+        "severity": "critical",
+        "action_on_violation": "Add Sodium lauryl sulfate (SLS)",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Boric Acid Addition",
+        "rule_definition": "Add 16.4 pounds granular Boric Acid to tank under agitation.",
+        "applies_on": [
+            "Bright Nickel Plating Solution"
+        ],
+        "parameters": {
+            "type": "amount",
+            "fields": [
+                "Boric Acid",
+                "tank under agitation"
+            ]
+        },
+        "severity": "recommendation",
+        "action_on_violation": "not specified",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "pH Adjustment",
+        "rule_definition": "Adjust pH to a working pH of 3.0 as directed by TDS.",
+        "applies_on": [
+            "Bright Nickel Plating Solution"
+        ],
+        "parameters": {
+            "type": "target",
+            "fields": [
+                "pH",
+                "working pH of 3.0"
+            ]
+        },
+        "severity": "recommendation",
+        "action_on_violation": "not specified",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Nickel Sulfamate Tetrahydrate Acceptable Range",
+        "rule_definition": "Acceptable range of Nickel Sulfamate Tetrahydrate concentration.",
+        "applies_on": [
+            "Nickel Sulfamate tank"
+        ],
+        "parameters": {
+            "type": "range",
+            "fields": [
+                "Nickel Sulfamate Tetrahydrate, g/L",
+                "Boric acid, g/L"
+            ]
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Adjust concentrations to meet specifications.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Nickel Chloride Hexahydrate Acceptable Range",
+        "rule_definition": "Acceptable range of Nickel Chloride Hexahydrate concentration.",
+        "applies_on": [
+            "Nickel Sulfamate tank"
+        ],
+        "parameters": {
+            "type": "range",
+            "fields": [
+                "Nickel Chloride Hexahydrate, g/L"
+            ]
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Adjust concentrations to meet specifications.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Surface Tension Limit",
+        "rule_definition": "Surface tension must be less than 45.",
+        "applies_on": [
+            "Pickle tank"
+        ],
+        "parameters": {
+            "type": "max",
+            "fields": [
+                "Surface Tension, mN/m"
+            ]
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Add Sodium lauryl sulfate (SLS) to reduce surface tension.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "DI Water and Nitric Acid Requirement",
+        "rule_definition": "The vessel must be filled with deionized (DI) water plus 2.5% nitric acid before starting the analysis.",
+        "applies_on": [
+            "Nickel Analysis"
+        ],
+        "parameters": {
+            "type": "condition",
+            "fields": null
+        },
+        "severity": "mandatory",
+        "action_on_violation": "The burner will not start if the vessel is not completely full.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Acetylene Pressure Limit",
+        "rule_definition": "Acetylene pressure must be set to 11 Psi and must not exceed 15 Psi.",
+        "applies_on": [
+            "Nickel Analysis"
+        ],
+        "parameters": {
+            "type": "max",
+            "fields": null
+        },
+        "severity": "mandatory",
+        "action_on_violation": "Adjust the pressure to comply with the specified limits.",
+        "extracted_from": null
+    },
+    {
+        "rule_name": "Surface Tension Limit",
+        "rule_definition": "Surface tension must be less than 45.",
+        "applies_on": [
+            "Pickle solution"
+        ],
+        "parameters": {
+            "type": "max",
+            "fields": null
+        },
+        "severity": "critical",
+        "action_on_violation": "Add Sodium lauryl sulfate (SLS)",
+        "extracted_from": null
+    }
+]

@@ -1,0 +1,49 @@
+2025-11-11 23:32:10,561 - lightrag - INFO - Ollama LLM Options: {}
+2025-11-11 23:32:10,562 - lightrag - INFO - Ollama Embedding Options: {}
+2025-11-11 23:32:10,562 - lightrag - INFO - Reranking is disabled
+2025-11-11 23:32:11,499 - lightrag - INFO - [_] Loaded graph from /Users/consultadd/Desktop/demos/untostr_bbt/backend/rag_storage/graph_chunk_entity_relation.graphml with 499 nodes, 620 edges
+2025-11-11 23:32:11,550 - lightrag - ERROR - Failed to initialize LightRAG: Embedding dim mismatch, expected: 1024, but loaded: 3072
+2025-11-11 23:32:14,781 - lightrag - INFO - Ollama LLM Options: {}
+2025-11-11 23:32:14,781 - lightrag - INFO - Ollama Embedding Options: {}
+2025-11-11 23:32:14,781 - lightrag - INFO - Reranking is disabled
+2025-11-11 23:32:15,062 - lightrag - INFO - [_] Loaded graph from /Users/consultadd/Desktop/demos/untostr_bbt/backend/rag_storage/graph_chunk_entity_relation.graphml with 499 nodes, 620 edges
+2025-11-11 23:32:15,103 - lightrag - ERROR - Failed to initialize LightRAG: Embedding dim mismatch, expected: 1024, but loaded: 3072
+2025-11-11 23:34:46,466 - lightrag - INFO - Ollama LLM Options: {}
+2025-11-11 23:34:46,466 - lightrag - INFO - Ollama Embedding Options: {}
+2025-11-11 23:34:46,466 - lightrag - INFO - Reranking is disabled
+2025-11-11 23:34:46,805 - lightrag - INFO - [_] Loaded graph from /Users/consultadd/Desktop/demos/untostr_bbt/backend/rag_storage/graph_chunk_entity_relation.graphml with 499 nodes, 620 edges
+2025-11-11 23:34:46,855 - lightrag - ERROR - Failed to initialize LightRAG: Embedding dim mismatch, expected: 1024, but loaded: 3072
+2025-11-11 23:35:26,102 - lightrag - INFO - OpenAI LLM Options: {'max_completion_tokens': 9000}
+2025-11-11 23:35:26,102 - lightrag - INFO - Ollama Embedding Options: {'num_ctx': 8192}
+2025-11-11 23:35:26,102 - lightrag - INFO - Reranking is disabled
+2025-11-11 23:35:26,377 - lightrag - INFO - [_] Loaded graph from /Users/consultadd/Desktop/demos/untostr_bbt/backend/rag_storage/graph_chunk_entity_relation.graphml with 499 nodes, 620 edges
+2025-11-11 23:35:26,422 - lightrag - ERROR - Failed to initialize LightRAG: Embedding dim mismatch, expected: 1024, but loaded: 3072
+2025-11-11 23:35:40,449 - lightrag - INFO - OpenAI LLM Options: {'max_completion_tokens': 9000}
+2025-11-11 23:35:40,449 - lightrag - INFO - Ollama Embedding Options: {'num_ctx': 8192}
+2025-11-11 23:35:40,449 - lightrag - INFO - Reranking is disabled
+2025-11-11 23:35:40,692 - lightrag - INFO - [_] Loaded graph from /Users/consultadd/Desktop/demos/untostr_bbt/backend/rag_storage/graph_chunk_entity_relation.graphml with 499 nodes, 620 edges
+2025-11-11 23:35:40,849 - uvicorn.error - INFO - Started server process [32805]
+2025-11-11 23:35:40,849 - uvicorn.error - INFO - Waiting for application startup.
+2025-11-11 23:35:40,849 - lightrag - INFO - [_] Process 32805 KV load full_docs with 5 records
+2025-11-11 23:35:40,850 - lightrag - INFO - [_] Process 32805 KV load text_chunks with 101 records
+2025-11-11 23:35:40,851 - lightrag - INFO - [_] Process 32805 KV load full_entities with 6 records
+2025-11-11 23:35:40,852 - lightrag - INFO - [_] Process 32805 KV load full_relations with 6 records
+2025-11-11 23:35:40,852 - lightrag - INFO - [_] Process 32805 KV load entity_chunks with 69 records
+2025-11-11 23:35:40,853 - lightrag - INFO - [_] Process 32805 KV load relation_chunks with 57 records
+2025-11-11 23:35:40,864 - lightrag - INFO - [_] Process 32805 KV load llm_response_cache with 241 records
+2025-11-11 23:35:40,864 - lightrag - INFO - [_] Process 32805 doc status load doc_status with 5 records
+2025-11-11 23:35:40,865 - uvicorn.error - INFO - Application startup complete.
+2025-11-11 23:35:40,865 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9621 (Press CTRL+C to quit)
+2025-11-11 23:35:45,292 - uvicorn.access - INFO - 127.0.0.1:58131 - "GET / HTTP/1.1" 307
+2025-11-11 23:35:45,293 - uvicorn.access - INFO - 127.0.0.1:58131 - "GET /webui HTTP/1.1" 307
+2025-11-11 23:35:45,312 - uvicorn.access - INFO - 127.0.0.1:58131 - "GET /webui/assets/index-CRtuqff2.js HTTP/1.1" 200
+2025-11-11 23:35:45,312 - uvicorn.access - INFO - 127.0.0.1:58132 - "GET /webui/assets/index-C8dNBpcg.css HTTP/1.1" 200
+2025-11-11 23:35:45,562 - uvicorn.access - INFO - 127.0.0.1:58132 - "GET /auth-status HTTP/1.1" 200
+2025-11-11 23:35:45,564 - uvicorn.access - INFO - 127.0.0.1:58133 - "GET /webui/favicon.png HTTP/1.1" 200
+2025-11-11 23:35:45,741 - uvicorn.access - INFO - 127.0.0.1:58133 - "GET /docs HTTP/1.1" 200
+2025-11-11 23:35:45,765 - lightrag - INFO - [_] Subgraph query successful | Node count: 499 | Edge count: 620
+2025-11-11 23:35:45,806 - uvicorn.access - INFO - 127.0.0.1:58132 - "GET /graphs?label=*&max_depth=3&max_nodes=1000 HTTP/1.1" 200
+2025-11-11 23:35:45,808 - uvicorn.access - INFO - 127.0.0.1:58133 - "GET /webui/assets/index-CQa5nmds.js HTTP/1.1" 200
+2025-11-11 23:35:45,810 - uvicorn.access - INFO - 127.0.0.1:58131 - "GET /static/swagger-ui/swagger-ui.css HTTP/1.1" 200
+2025-11-11 23:35:45,811 - uvicorn.access - INFO - 127.0.0.1:58134 - "GET /static/swagger-ui/swagger-ui-bundle.js HTTP/1.1" 200
+2025-11-11 23:35:45,976 - uvicorn.access - INFO - 127.0.0.1:58134 - "GET /openapi.json HTTP/1.1" 200
